@@ -10,7 +10,6 @@ function ImageUpload() {
     setSelectedFile(event.target.files[0]);
   };
 
-  // Handle file upload and API request
   const handleUpload = async () => {
     if (!selectedFile) {
       alert("Please select an image first!");
@@ -29,12 +28,12 @@ function ImageUpload() {
       });
 
       const data = await res.json();
-      console.log("API Response:", data); // Log the API response
-      setRecipe(data.recipe); // Set the recipe to display
+      console.log("API Response:", data);
+      setRecipe(data.recipe);
     } catch (error) {
       console.error("Error uploading image:", error);
     } finally {
-      setLoading(false); // Hide loading state
+      setLoading(false);
     }
   };
 
