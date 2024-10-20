@@ -9,13 +9,12 @@
 # It is then processed by the API which then spits out the result to the user 
 
 # To start
-# Go to terminal
-# 1. CD Backend 
-# 2. node index.js
-
-# Open another terminal
-# 1. CD frontend
-# 2. npm run dev
+# 1. Open a terminal 
+# 2. Go to the directory of the project ( in let say IngreVision)
+# 3. run this -> chmod +x script.sh
+# 4. then this -> ./script.sh
+# 5. copy the local host link 
+# Enjoy the application 
 
 
 
