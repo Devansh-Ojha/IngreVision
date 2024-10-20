@@ -8,7 +8,15 @@
 # We use gemini API to process the image which is given as input by the user
 # It is then processed by the API which then spits out the result to the user 
 
-# 
+# To start
+# Go to terminal
+# 1. CD Backend 
+# 2. node index.js
+
+# Open another terminal
+# 1. CD frontend
+# 2. npm run dev
+
 
 
 
