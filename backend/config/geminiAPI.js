@@ -14,7 +14,7 @@ const processImage = async (file) => {
         const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
         const result = await model.generateContent([
-            'Generate a recipe based on this image:',
+            'Generate a recipe based on this image and for instructions section it should be considered as single dish not sub dishes in it: and give name, ingredients, instructions and tips thats it each time',
             {
                 inlineData: {
                     mimeType: 'image/png',
@@ -23,7 +23,7 @@ const processImage = async (file) => {
             },
         ]);
 
-        console.log('Received response from Gemini API:', result.response.text()); // Log the response
+        // console.log('Received response from Gemini API:', result.response.text()); // Log the response
 
         return result.response.text();
     } catch (error) {

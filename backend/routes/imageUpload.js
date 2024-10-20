@@ -10,11 +10,11 @@ router.post('/upload', upload.single('image'), async (req, res) => {
     try {
         const file = req.file;
 
-        console.log('Image uploaded:', file.originalname);
+        console.log('Image uploaded:\n', file.originalname);
 
         const recipe = await processImage(file);
 
-        console.log('Recipe generated:', recipe);
+        console.log('Recipe generated:\n', recipe);
 
         res.json({ recipe });
 
